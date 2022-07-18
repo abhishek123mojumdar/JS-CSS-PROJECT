@@ -1,6 +1,13 @@
-// Import stylesheets
-import './style.css';
+var panels = document.querySelectorAll('.panel');
+panels.forEach((panel) => {
+  panel.addEventListener('click', addRemoveClass);
+});
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+function addRemoveClass() {
+  panels.forEach((panel) => {
+    panel.classList.remove('active');
+  });
+  this.classList.add('active');
+}
+
+// This is a Abhishek Mojumdar learning project
