@@ -1,3 +1,8 @@
+// Import stylesheets
+import './style.css';
+
+// Write Javascript code!
+
 var panels = document.querySelectorAll('.panel');
 panels.forEach((panel) => {
   panel.addEventListener('click', addRemoveClass);
