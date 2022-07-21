@@ -7,9 +7,8 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /*it centers the content corresponding to the height of the flex-box */
   height: 100vh;
   overflow-y: hidden;
   margin: 0;
