@@ -1,18 +1,14 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-
 var panels = document.querySelectorAll('.panel');
 panels.forEach((panel) => {
-  panel.addEventListener('click', addRemoveClass);
-});
-
-function addRemoveClass() {
-  panels.forEach((panel) => {
-    panel.classList.remove('active');
+  panel.addEventListener('click', () => {
+    panels.forEach((panelCheck) => {
+      panelCheck.classList.remove('active');
+    });
+    if (!panel.classList.contains('active')) {
+      panel.classList.add('active');
+    }
   });
-  this.classList.add('active');
-}
-
-// This is a Abhishek Mojumdar learning project
+});
